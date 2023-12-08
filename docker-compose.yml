@@ -1,0 +1,10 @@
+version: '3'
+services:
+  blog:
+    build: .
+    tty: true
+    volumes:
+      - ./blog/:/app/blog
+    ports:
+      - "3001:3001"
+    container_name: blog
